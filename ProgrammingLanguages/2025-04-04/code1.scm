@@ -103,6 +103,23 @@
 
 	  (else input))))
 
+;;; cons-each: cons an item onto each list
+;;; in a list of list
+;;; (cons-each 'a '( () (b) (c) (b c)))
+;;;   --->  ( (a)  (a b)  (a c) (a b c) )
+(define cons-each
+  (lambda (symbol lst)
+    (if (null? lst)
+	'()
+	(cons
+
+	 (cons symbol (car lst)) ;; onto first list
+
+	 (cons-each symbol (cdr lst))))))
+	
+
+	 
+
 
 	  
     
