@@ -73,6 +73,13 @@
 	   (cons
 	    (car lst)   ;; single item
 	    (remove-all symbol (cdr lst)))))))  ;; lst
+
+;;; Substitute one symbol for another
+;;; (subst 'b 'a '(x y b z b z))
+;;;     ----> (x y a z a z)
+;;; (subst 'b 'a '((b c) ((b) () d) b))
+;;;     ----> ((a c) ((a) () d) a)
+
 	  
     
 
