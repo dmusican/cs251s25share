@@ -79,6 +79,16 @@
 ;;;     ----> (x y a z a z)
 ;;; (subst 'b 'a '((b c) ((b) () d) b))
 ;;;     ----> ((a c) ((a) () d) a)
+;;; (subst 'b 'a 'b)
+;;;     ----> 'a
+(define subst
+  (lambda (old new input)
+    (cond ((null? input) _________________)
+	  ((list? input) _________________)
+	  ((equal? input old) ______________)
+	  (else ________________________))))
+
+
 
 	  
     
