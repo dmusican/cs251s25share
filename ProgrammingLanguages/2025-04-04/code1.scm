@@ -96,12 +96,12 @@
 	   (cons
 	    (subst old new (car input))
 	    (subst old new (cdr input))
-	    )
+	    ))
 	   
 
 	  ((equal? input old) new)
 
-	  (else input)))))
+	  (else input))))
 
 
 
