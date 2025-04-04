@@ -56,5 +56,24 @@
     
 
 
+;;; (remove-all 'a '(a b c a d))
+;;;    --->  '(b c d)
+;;; (remove-all 'b '(a b c a b d))
+;;;    --->  '(a c a d) 
+(define remove-all
+  (lambda (symbol lst)
+    (cond ((null? lst)
+	   '())
+
+	  ((equal? symbol (car lst))
+	   (remove-all symbol (cdr lst)))
+	   
+
+	  (else
+	   (cons
+	    (car lst)   ;; single item
+	    (remove-all symbol (cdr lst)))))))  ;; lst
+	  
+    
 
 
