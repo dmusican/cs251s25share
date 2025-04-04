@@ -73,6 +73,12 @@
 	   (cons
 	    (car lst)   ;; single item
 	    (remove-all symbol (cdr lst)))))))  ;; lst
+;; (define subst
+;;   (lambda (old new input)
+;;     (cond ((null? input) _________________)
+;; 	  ((list? input) _________________)
+;; 	  ((equal? input old) ______________)
+;; 	  (else ________________________))))
 
 ;;; Substitute one symbol for another
 ;;; (subst 'b 'a '(x y b z b z))
@@ -83,10 +89,19 @@
 ;;;     ----> 'a
 (define subst
   (lambda (old new input)
-    (cond ((null? input) _________________)
-	  ((list? input) _________________)
-	  ((equal? input old) ______________)
-	  (else ________________________))))
+    (cond ((null? input) '())
+
+	  ((list? input)
+
+	   (cons
+	    (subst old new (car input))
+	    (subst old new (cdr input))
+	    )
+	   
+
+	  ((equal? input old) new)
+
+	  (else input))))
 
 
 
