@@ -24,8 +24,26 @@
 
 ;; you can use square brackets instead of
 ;; parens if you like (so long as they match)
-(define nth
-  (lambda (lst n)
-    (cond [(null? lst) #f]
-	  [(equal? n 0) (car lst)]
-	  [else (nth (cdr lst) (- n 1))])))
+;; (define nth
+;;   (lambda (lst n)
+;;     (cond [(null? lst) #f]
+;; 	  [(equal? n 0) (car lst)]
+;; 	  [else (nth (cdr lst) (- n 1))])))
+
+;;; All above examples return just a single answer.
+;;; Look at code that assembles lists and returns
+;;; those.
+
+;;; (remove-first 'a '(a b c a d))
+;;;    --->  '(b c a d)
+;;; (remove-first 'b '(a b c a b d))
+;;;    --->  '(a c a b d) 
+;;; "remove" is sort of confusing: we are
+;;; returning a NEW LIST
+(define remove-first
+  (lambda (symbol lst)
+    
+
+
+
+
