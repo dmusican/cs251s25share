@@ -42,6 +42,17 @@
 ;;; returning a NEW LIST
 (define remove-first
   (lambda (symbol lst)
+    (cond ((null? lst)
+	   '())
+
+	  ((equal? symbol (car lst))
+	   (cdr lst))
+
+	  (else
+	   (cons
+	    (car lst)   ;; single item
+	    (remove-first symbol (cdr lst)))))))  ;; lst
+	  
     
 
 
