@@ -83,7 +83,7 @@
   (lambda (f lst)
     (if (null? lst)
 	'()
-	(cons  (f (car lst)) (my-map (cdr lst))))))
+	(cons  (f (car lst)) (my-map f (cdr lst))))))
 
 (my-map (lambda (x) (+ x 1)) '(9 2 3 4 5))
 
