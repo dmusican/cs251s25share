@@ -14,3 +14,12 @@
 
    )
 )
+
+;; redoit again, without blank space and comments
+(define mult
+  (lambda (a)
+    (lambda (b)
+      (* a b))
+
+   )
+)
