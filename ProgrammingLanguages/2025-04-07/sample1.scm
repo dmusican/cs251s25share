@@ -55,7 +55,28 @@
     (fold-left max 0 (map length documents))))
 
 (max-length lists)
-    
+
+
+;;; count number of times a word appears "on a page"
+;;; i.e., in a list
+(define text '(the quick brown fox ate a fox squirrel
+		   quick quick))
+(define count-word
+  ;;; target is the word I'm looking to count
+  (lambda (target words)
+    ;; use map to change all occurrences of target
+    ;; into a 1, otherwise all else is a 0
+    ;; then we'll add everything up
+
+    (map (lambda (word)
+	   (if (equal? target) 1 0))
+	 words)))
+
+
+(count-word 'fox text)
+
+
+  
 
 
 
