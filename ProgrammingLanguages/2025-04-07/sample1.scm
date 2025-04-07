@@ -68,9 +68,10 @@
     ;; into a 1, otherwise all else is a 0
     ;; then we'll add everything up
 
-    (map (lambda (word)
-	   (if (equal? target word) 1 0))
-	 words)))
+    (fold-left + 0
+	       (map (lambda (word)
+		      (if (equal? target word) 1 0))
+		    words))))
 
 
 (count-word 'fox text)
