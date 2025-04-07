@@ -40,6 +40,7 @@
 (define lists '((the fox jumped) (the cow mooed)
 		(birds) (happy cheetahs)))
 
+;; like an import
 (use-modules ((rnrs) #:select (fold-left)))
 
 (define total-length
