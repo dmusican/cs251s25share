@@ -23,3 +23,18 @@
 
    )
 )
+
+(define add-one
+  (lambda (x)
+    (+ x 1)))
+
+(map add-one '(9 2 3 5 4))
+
+
+
+
+
+
+
+
+
