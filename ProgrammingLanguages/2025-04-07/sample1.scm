@@ -74,7 +74,7 @@
 		    words))))
 
 
-(count-word 'fox text)
+(count-word 'quick text)
 
 
   
