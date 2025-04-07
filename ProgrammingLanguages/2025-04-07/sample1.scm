@@ -36,6 +36,16 @@
 (map (lambda (lst) (car lst)) '((a b c) (d e) (f g h)))
 
 
+;;; Add up lengths of sublists
+(define lists '((the fox jumped) (the cow mooed)
+		(birds) (happy cheetahs)))
+
+(define total-length
+  (lambda (documents)
+    (fold-left + 0 (map length documents))))
+
+
+
 
 
 
