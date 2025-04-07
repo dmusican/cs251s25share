@@ -40,6 +40,8 @@
 (define lists '((the fox jumped) (the cow mooed)
 		(birds) (happy cheetahs)))
 
+(use-modules ((rnrs) #:select (fold-left)))
+
 (define total-length
   (lambda (documents)
     (fold-left + 0 (map length documents))))
