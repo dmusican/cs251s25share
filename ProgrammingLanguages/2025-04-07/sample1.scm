@@ -78,6 +78,23 @@
 (count-word 'quick text)
 
 
+;;; Make our own map function!
+(define my-map
+  (lambda (f lst)
+    (if (null? lst)
+	'()
+	(cons  (f (car lst)) (my-map (cdr lst))))))
+
+
+
+
+
+
+
+
+
+
+
   
 
 
