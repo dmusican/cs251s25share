@@ -33,6 +33,8 @@
 ;;; Alternatively
 (map (lambda (x) (+ x 1)) '(9 2 3 5 4))
 
+(map (lambda (lst) (car lst)) '((a b c) (d e) (f g h)))
+
 
 
 
