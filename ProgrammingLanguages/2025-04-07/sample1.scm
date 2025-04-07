@@ -69,7 +69,7 @@
     ;; then we'll add everything up
 
     (map (lambda (word)
-	   (if (equal? target) 1 0))
+	   (if (equal? target word) 1 0))
 	 words)))
 
 
