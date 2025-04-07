@@ -49,7 +49,11 @@
 
 (total-length lists)
 
-
+;;; find the maximum length of a sublist
+(define max-length
+  (lambda (documents)
+    (fold-left max 0 (map length documents))))
+    
 
 
 
