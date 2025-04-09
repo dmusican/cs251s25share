@@ -1,7 +1,7 @@
-x = 3
+x = 1
 
 def doit():
-    x = 8
+    x = 2
 
 doit()
 print(x)
