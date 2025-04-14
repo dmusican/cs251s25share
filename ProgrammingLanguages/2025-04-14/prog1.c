@@ -14,4 +14,12 @@ int main() {
     printf("%i\n", *y);
     x = (int*)19;
     printf("%i\n", *x);
+
+    int b = 7;
+    int *z = &b;
+    *z = 9;
+    printf("%i\n", b);
+    printf("%i\n", *b);
+    printf("%i\n", z);
+    printf("%i\n", *z);
 }
