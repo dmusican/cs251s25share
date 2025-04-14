@@ -12,6 +12,6 @@ int main() {
     *x = 12;
     printf("%i\n", *x);
     printf("%i\n", *y);
-    x = 19;
+    x = (int*)19;
     printf("%i\n", *x);
 }
