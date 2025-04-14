@@ -19,6 +19,6 @@ int main() {
     int *z = &b;
     *z = 9;
     printf("%i\n", b);
-    printf("%i\n", z);
+    printf("%p\n", z);
     printf("%i\n", *z);
 }
