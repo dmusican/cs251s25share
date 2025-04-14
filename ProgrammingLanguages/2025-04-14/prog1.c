@@ -12,8 +12,8 @@ int main() {
     *x = 12;
     printf("%i\n", *x);
     printf("%i\n", *y);
-    x = (int*)19;
-    printf("%i\n", *x);
+    // x = (int*)19;
+    // printf("%i\n", *x);
 
     int b = 7;
     int *z = &b;
