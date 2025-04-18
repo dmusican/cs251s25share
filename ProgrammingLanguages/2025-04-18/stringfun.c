@@ -19,4 +19,5 @@ int main() {
 
     char *word = "hello";
     printf("%s\n", word);
+    word[0] = 'b';
 }
