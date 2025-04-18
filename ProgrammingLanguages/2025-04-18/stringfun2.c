@@ -8,6 +8,7 @@ int main() {
     char *word = malloc(sizeof(char)*2);
     word[0] = 'h';
     word[1] = 'i';
+    word[2] = 'x';
 
     printf("%lu\n", strlen(word));
 }
