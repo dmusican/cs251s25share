@@ -52,7 +52,7 @@ int main() {
     }
 
     // Create a reference to a
-    int *e = &a;
+    int *e = a;
 
     for (int i = 0; i < 3; i++) {
         printf("e[%i] = %i\n", i, e[i]);
