@@ -28,5 +28,17 @@ int main() {
     }
 
     // Step 2: make an array in the heap instead
-    int *c = malloc(sizeof(int)*3)
+    int *c = malloc(sizeof(int)*3);
+
+    // C is perfectly happy to treat a pointer to
+    // an array as the array itself regard syntax
+
+    for (int i = 0; i < 3; i++) {
+        c[i] = i;
+    }
+
+    for (int i = 0; i < 3; i++) {
+        printf("c[%i] = %i\n", i, c[i]);
+    }
+
 }
