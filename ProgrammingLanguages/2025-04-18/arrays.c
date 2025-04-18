@@ -50,4 +50,13 @@ int main() {
     for (int i = 0; i < 3; i++) {
         printf("d[%i] = %i\n", i, d[i]);
     }
+
+    // Create a reference to a
+    int *e = &a;
+
+    for (int i = 0; i < 3; i++) {
+        printf("e[%i] = %i\n", i, e[i]);
+    }
+
+
 }
