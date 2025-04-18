@@ -5,7 +5,7 @@
 int main() {
     // BAD BAD BAD
     // Slow way to make a string, but it works
-    char word[2];
+    char *word = malloc(sizeof(char)*2);
     word[0] = 'h';
     word[1] = 'i';
 
