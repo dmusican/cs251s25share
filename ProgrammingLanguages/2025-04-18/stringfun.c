@@ -7,6 +7,6 @@ int main() {
     char word[3];
     word[0] = 'h';
     word[1] = 'i';
-    word[2] = '\0';
+    // word[2] = '\0';
     printf("%s\n", word);
 }
