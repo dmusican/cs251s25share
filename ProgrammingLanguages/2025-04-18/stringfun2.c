@@ -9,6 +9,7 @@ int main() {
     word[0] = 'h';
     word[1] = 'i';
     word[2] = 'x';
+    word[3] = 'y';
 
     printf("%lu\n", strlen(word));
 }
