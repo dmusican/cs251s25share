@@ -41,4 +41,13 @@ int main() {
         printf("c[%i] = %i\n", i, c[i]);
     }
 
+    // Variable aliasing (more than one
+    // variable pointing to the same thing
+    int *d;
+    d = c;
+    c[2] = 7
+
+    for (int i = 0; i < 3; i++) {
+        printf("d[%i] = %i\n", i, d[i]);
+    }
 }
