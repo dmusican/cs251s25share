@@ -8,5 +8,6 @@ int main() {
     word[0] = 'h';
     word[1] = 'i';
     // word[2] = '\0';
+    int x = 3;
     printf("%s\n", word);
 }
