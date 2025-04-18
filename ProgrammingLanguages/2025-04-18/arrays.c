@@ -27,4 +27,6 @@ int main() {
         printf("b[%i] = %i\n", i, b[i]);
     }
 
+    // Step 2: make an array in the heap instead
+    int *c = malloc(sizeof(int)*3)
 }
