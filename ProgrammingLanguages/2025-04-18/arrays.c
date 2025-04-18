@@ -13,6 +13,6 @@ int main() {
     }
 
     // Let's another variable for this thing
-    // int b[3]; // makes a whole new array
+    int b[3]; // makes a whole new array
     b = a;
 }
