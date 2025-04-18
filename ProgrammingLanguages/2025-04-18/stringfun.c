@@ -26,4 +26,6 @@ int main() {
     // Go with heap, allocate more than I need
     char *words = malloc(sizeof(char) * 1000);
     strcpy(word2, "hello");
+    word2[0] = 'b';
+    printf("%s\n", word2);
 }
