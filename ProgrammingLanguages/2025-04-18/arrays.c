@@ -19,7 +19,7 @@ int main() {
     // To copy, could just loop and copy every item
     // one by one, or can do...
     // copy into b, from a, number of bytes
-    memcpy(b, a, sizeof(int)*3)
+    memcpy(b, a, sizeof(int)*3);
 
 
     for (int i = 0; i < 3; i++) {
