@@ -11,9 +11,12 @@ int main() {
     // // word[2] = '\0';  B
 
     // Better: correct, but long, and idiomatic
-    char word[3];
-    word[0] = 'h';
-    word[1] = 'i';
-    word[2] = '\0';
+    // char word[3];
+    // word[0] = 'h';
+    // word[1] = 'i';
+    // word[2] = '\0';
+    // printf("%s\n", word);
+
+    char *word = "hello";
     printf("%s\n", word);
 }
