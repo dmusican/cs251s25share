@@ -11,4 +11,7 @@ int main() {
     for (int i = 0; i < 3; i++) {
         printf("a[%i] = %i\n", i, a[i]);
     }
+
+    // Let's another variable for this thing
+    b = a;
 }
