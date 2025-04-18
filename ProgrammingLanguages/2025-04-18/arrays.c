@@ -45,7 +45,7 @@ int main() {
     // variable pointing to the same thing
     int *d;
     d = c;
-    c[2] = 7
+    c[2] = 7;
 
     for (int i = 0; i < 3; i++) {
         printf("d[%i] = %i\n", i, d[i]);
