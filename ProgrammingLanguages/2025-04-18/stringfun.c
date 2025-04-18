@@ -19,5 +19,11 @@ int main() {
 
     char *word = "hello";
     printf("%s\n", word);
-    word[0] = 'b';
+    // word[0] = 'b';  // bad bad bad
+    // If you want to modify, you need to copy
+    // Make more memory to hold a copy
+    // Stack or heap?
+    // Go with heap, allocate more than I need
+    char *words = malloc(sizeof(char) * 1000);
+    strcpy(word2, "hello");
 }
