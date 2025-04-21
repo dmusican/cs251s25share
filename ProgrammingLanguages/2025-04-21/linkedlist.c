@@ -19,6 +19,6 @@ LinkedList *insertFrontLL(LinkedList *list, int item) {
 int main() {
     LinkedList *numbers = NULL;
     for (int i=0; i < 5; i++) {
-        list = insertFrontLL(numbers, i);
+        numbers = insertFrontLL(numbers, i);
     }
 }
