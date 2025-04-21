@@ -30,7 +30,7 @@ void cleanupLL(LinkedList *list) {
     while (cur != NULL) {
         LinkedList *next = cur->next;
         free(cur);
-        cur = cur->next;
+        cur = next;
     }
 }
 
