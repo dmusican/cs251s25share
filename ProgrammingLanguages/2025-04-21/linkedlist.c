@@ -15,6 +15,12 @@ LinkedList *insertFrontLL(LinkedList *list, int item) {
     return cell;
 }
 
+void displayLL(LinkedList *list) {
+
+
+
+}
+
 int main() {
     LinkedList *numbers = NULL;
     for (int i=0; i < 5; i++) {
