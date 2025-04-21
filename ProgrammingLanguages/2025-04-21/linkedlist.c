@@ -23,6 +23,11 @@ void displayLL(LinkedList *list) {
     }
 }
 
+// free all structs in the list
+void cleanupLL(LinkedList *list) {
+    // try this
+}
+
 int main() {
     LinkedList *numbers = NULL;
     for (int i=0; i < 5; i++) {
@@ -31,6 +36,7 @@ int main() {
     displayLL(numbers);
 
     // Start over with a new list
+    free(numbers);  // won't do it
     numbers = NULL;
     for (int i=60; i < 65; i++) {
         numbers = insertFrontLL(numbers, i);
