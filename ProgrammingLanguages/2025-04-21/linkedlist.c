@@ -28,6 +28,7 @@ void cleanupLL(LinkedList *list) {
     // wrong but close
     LinkedList *cur = list;
     while (cur != NULL) {
+        LinkedList *next = cur->next;
         free(cur);
         cur = cur->next;
     }
