@@ -41,11 +41,13 @@ int main() {
     displayLL(numbers);
 
     // Start over with a new list
-    free(numbers);  // won't do it
     numbers = NULL;
+    cleanupLL(numbers);
     for (int i=60; i < 65; i++) {
         numbers = insertFrontLL(numbers, i);
     }
     displayLL(numbers);
+    cleanupLL(numbers);
+
 
 }
