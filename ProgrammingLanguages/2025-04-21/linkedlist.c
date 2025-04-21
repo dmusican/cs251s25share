@@ -6,3 +6,4 @@ typedef struct LinkedList {
 } LinkedList;
 
 int main() {
+    LinkedList *list = NULL;
