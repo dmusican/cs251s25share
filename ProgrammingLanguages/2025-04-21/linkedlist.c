@@ -25,7 +25,12 @@ void displayLL(LinkedList *list) {
 
 // free all structs in the list
 void cleanupLL(LinkedList *list) {
-    // try this
+    // wrong but close
+    LinkedList *cur = list;
+    while (cur != NULL) {
+        free(cur);
+        cur = cur->next;
+    }
 }
 
 int main() {
