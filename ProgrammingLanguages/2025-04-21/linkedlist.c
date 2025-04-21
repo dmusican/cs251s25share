@@ -12,9 +12,8 @@ LinkedList *insertFrontLL(LinkedList *list, int item) {
     // (*cell).value = item;
     cell->value = item;
     cell->next = list;
-
-
-
+    return cell;
+}
 
 int main() {
     LinkedList *numbers = NULL;
