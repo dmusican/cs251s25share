@@ -1,9 +1,16 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef struct LinkedList {
     int value;
     struct LinkedList *next;
 } LinkedList;
+
+LinkedList *insertFrontLL(LinkedList *list, int item) {
+    LinkedList *cell = malloc(sizeof(LinkedList));
+
+
+
 
 int main() {
     LinkedList *list = NULL;
