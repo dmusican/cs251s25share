@@ -16,7 +16,7 @@ LinkedList *insertFrontLL(LinkedList *list, int item) {
 }
 
 void displayLL(LinkedList *list) {
-
+    // do this
 
 
 }
