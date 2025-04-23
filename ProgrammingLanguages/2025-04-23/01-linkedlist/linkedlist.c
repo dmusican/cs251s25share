@@ -1,40 +1,38 @@
 #include "linkedlist.h"
+#include <stdlib.h>
 
 SchemeVal *makeEmpty() {
-    return null;
+    return NULL;
 }
 
 SchemeVal *cons(SchemeVal *newCar, SchemeVal *newCdr) {
-    return null;
+    return NULL;
 }
 
 void display(SchemeVal *list) {
-    return null;
+    return NULL;
 }
 
 SchemeVal *reverse(SchemeVal *list) {
-    return null;
+    return NULL;
 }
 
 void cleanup(SchemeVal *list) {
-    return null;
+    return NULL;
 }
 
-// Utility to make it less typing to get car value. Use assertions to make sure
-// that this is a legitimate operation.
-SchemeVal *car(SchemeVal *list);
+SchemeVal *car(SchemeVal *list) {
+    return NULL;
+}
 
-// Utility to make it less typing to get cdr value. Use assertions to make sure
-// that this is a legitimate operation.
-SchemeVal *cdr(SchemeVal *list);
+SchemeVal *cdr(SchemeVal *list) {
+    return NULL;
+}
 
-// Utility to check if pointing to a NULL_TYPE value. Use assertions to make sure
-// that this is a legitimate operation.
-bool isEmpty(SchemeVal *value);
+bool isEmpty(SchemeVal *value) {
+    return true;
+}
 
-// Measure length of list. Use assertions to make sure that this is a legitimate
-// operation.
-int length(SchemeVal *value);
-
-
-#endif
+int length(SchemeVal *value) {
+    return 0;
+}
