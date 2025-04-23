@@ -18,7 +18,7 @@ SchemeVal *reverse(SchemeVal *list) {
 }
 
 void cleanup(SchemeVal *list) {
-    return NULL;
+    
 }
 
 SchemeVal *car(SchemeVal *list) {
