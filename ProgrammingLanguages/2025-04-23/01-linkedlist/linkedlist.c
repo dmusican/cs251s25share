@@ -10,7 +10,7 @@ SchemeVal *cons(SchemeVal *newCar, SchemeVal *newCdr) {
 }
 
 void display(SchemeVal *list) {
-    return NULL;
+
 }
 
 SchemeVal *reverse(SchemeVal *list) {
