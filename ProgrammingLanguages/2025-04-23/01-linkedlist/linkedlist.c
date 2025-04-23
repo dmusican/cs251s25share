@@ -2,7 +2,15 @@
 #include <stdlib.h>
 
 SchemeVal *makeEmpty() {
-    return NULL;
+    SchemeVal *thing = malloc(sizeof(SchemeVal));
+    thing->type = CONS_TYPE;
+    SchemeVal *x = malloc(sizeof(SchemeVal));
+    x->type = INT_TYPE;
+    x->i = 3;
+    thing->car = x;
+    SchemeVal *y = malloc(sizeof(SchemeVal));
+    y -> type = EMPTY_TYPE;
+    return thing;
 }
 
 SchemeVal *cons(SchemeVal *newCar, SchemeVal *newCdr) {
