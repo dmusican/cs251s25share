@@ -124,6 +124,7 @@ int main(int argc, char **argv) {
   head = cons(val1,head);
   correctLength++;
   printf("head type is %i\n", head->type);
+  fflush(stdout);
   assert(length(head) == correctLength);
 
   SchemeVal *reverseLengthOne = reverse(head);
