@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 SchemeVal *makeEmpty() {
+    // terribly wrong code
     SchemeVal *thing = malloc(sizeof(SchemeVal));
     thing->type = CONS_TYPE;
     SchemeVal *x = malloc(sizeof(SchemeVal));
@@ -14,6 +15,7 @@ SchemeVal *makeEmpty() {
 }
 
 SchemeVal *cons(SchemeVal *newCar, SchemeVal *newCdr) {
+    // terribly wrong code
     SchemeVal *thing = malloc(sizeof(SchemeVal));
     thing->type = CONS_TYPE;
     SchemeVal *x = malloc(sizeof(SchemeVal));
