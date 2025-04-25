@@ -1,0 +1,1 @@
+inpfile = open('myprog.greet'
