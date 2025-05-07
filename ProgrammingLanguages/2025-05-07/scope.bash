@@ -1,8 +1,8 @@
-x="3"
+x="1"
 
 function fun1
 {
-    local x="4"
+    local x="2"
     fun2;
 }
 
