@@ -1,7 +1,7 @@
-x = 3
+x = 1
 
 def fun1():
-    x = 4
+    x = 2
     fun2()
 
 def fun2():
