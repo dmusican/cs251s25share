@@ -1,9 +1,9 @@
 public class Scope {
 
-    public int x = 3;
+    public int x = 1;
 
     public void fun1() {
-        int x = 4;
+        int x = 2;
         fun2();
     }
 
