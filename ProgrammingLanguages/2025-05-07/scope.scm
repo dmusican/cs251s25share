@@ -1,8 +1,8 @@
-(define x 3)
+(define x 1)
 
 (define fun1
   (lambda ()
-    (let ((x 4))
+    (let ((x 2))
       (fun2))))
 
 (define fun2
