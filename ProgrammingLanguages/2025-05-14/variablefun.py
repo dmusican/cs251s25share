@@ -1,7 +1,6 @@
 x = 1
 
 def doit():
-    x = 2
+    print(x)
 
 doit()
-print(x)
