@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class SortFun {
     public static void main(String[] args) {
         String[] words = {"a", "horse", "is", "happiest", "now"};
