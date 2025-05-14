@@ -1,8 +1,8 @@
 x = 1
 
 def doit():
+    print("I am here")
     print(x)
     x = 2
 
-print("I am here")
 doit()
