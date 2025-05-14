@@ -5,3 +5,4 @@ def doit():
     x = 2
 
 doit()
+print(x)
