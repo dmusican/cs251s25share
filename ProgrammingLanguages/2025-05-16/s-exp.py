@@ -37,7 +37,6 @@ def match(expected):
 
 
 
-    
 def P():
     if token in ['atom' , "'" , '(']:
         E()
