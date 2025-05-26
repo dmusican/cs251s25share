@@ -25,9 +25,9 @@ void bind(char *name, SchemeVal *(*function)(SchemeVal *), Frame *frame) {
     // Add primitive functions to top-level bindings list
     SchemeVal *value = talloc(sizeof(SchemeVal));
 
-    value->type = _________________________________________;
+    value->type = PRIMITIVE_TYPE;
 
-    value->pf = ______________________________________;
+    value->pf = function;
 
     // Your code will differ from each other some on the following;
     // it adds a binding to a frame; can leave that out here
@@ -41,7 +41,7 @@ void interpret(SchemeVal *tree) {
     frame->bindings = makeEmpty();
     frame->parent = NULL;
 
-    bind("exp", _______________, __________________);
+    bind("exp", primitiveExp, frame);
 
     // ...
 }
