@@ -28,4 +28,3 @@ int main() {
     answer = doit(multiply, 3, 5);
     printf("%i\n", answer);
 }
-}
