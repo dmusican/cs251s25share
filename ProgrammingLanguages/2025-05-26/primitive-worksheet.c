@@ -23,7 +23,7 @@ SchemeVal *primitiveExp(SchemeVal *args) {
 
 void bind(char *name, SchemeVal *(*function)(SchemeVal *), Frame *frame) {
     // Add primitive functions to top-level bindings list
-    SchemeVal *value = talloc(sizeof(________________________));
+    SchemeVal *value = talloc(sizeof(SchemeVal));
 
     value->type = _________________________________________;
 
