@@ -8,6 +8,10 @@ int multiply(int x, int y) {
     return x * y;
 }
 
+// idea, but bad code
+int doit(function f, int a, int b) {
+    f(a, b);
+}
 
 int main() {
     int answer = doit(add, 3, 5);
