@@ -17,7 +17,7 @@ SchemeVal *primitiveExp(SchemeVal *args) {
 
    // Uses built-in C function exp
 
-   result->d = exp(__________________________);
+   result->d = exp(car(args)->d);
    return result;
 }
 
