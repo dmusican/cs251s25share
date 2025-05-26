@@ -10,9 +10,10 @@ typedef struct SchemeVal {
 SchemeVal *primitiveExp(SchemeVal *args) {
    // check that args has length one and car(args) is numerical
    // assume that car(args) is of type double, should check that as well
-   SchemeVal *result = talloc(sizeof(__________________________));
 
-   result->type = _____________________________________;
+   SchemeVal *result = talloc(sizeof(SchemeVal));
+
+   result->type = DOUBLE_TYPE;
 
    // Uses built-in C function exp
 
