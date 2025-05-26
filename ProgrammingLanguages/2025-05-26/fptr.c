@@ -18,7 +18,7 @@ int multiply(int x, int y) {
 // I have to say "f is a pointer"
 int doit(int (*f)(int, int),
          int a, int b) {
-    f(a, b);
+    return f(a, b);
 }
 
 int main() {
