@@ -15,7 +15,8 @@ int multiply(int x, int y) {
 // I have to say "f is a function of two
 // integer parameters"
 // I have to say "it returns an int"
-int doit(function f(int, int),
+// I have to say "f is a pointer"
+int doit(function int f(int, int),
          int a, int b) {
     f(a, b);
 }
