@@ -9,7 +9,14 @@ int multiply(int x, int y) {
 }
 
 // idea, but bad code
-int doit(function f, int a, int b) {
+// int doit(function f, int a, int b) {
+//     f(a, b);
+// }
+// I have to say "f is a function of two
+// integer parameters"
+// I have to say "it returns an int"
+int doit(function f(int, int),
+         int a, int b) {
     f(a, b);
 }
 
