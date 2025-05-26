@@ -16,7 +16,7 @@ int multiply(int x, int y) {
 // integer parameters"
 // I have to say "it returns an int"
 // I have to say "f is a pointer"
-int doit(int *f(int, int),
+int doit(int (*f)(int, int),
          int a, int b) {
     f(a, b);
 }
