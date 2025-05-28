@@ -11,3 +11,7 @@
 (let ((a 3))
   (let ((b (+ a 1)))
     (+ a b)))
+
+;; or, same thing, just shorthand
+(let* ((a 3) (b (+ a 1)))
+  (+ a b))
