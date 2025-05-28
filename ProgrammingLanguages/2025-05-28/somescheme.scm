@@ -13,5 +13,6 @@
     (+ a b)))
 
 ;; or, same thing, just shorthand
+;; let* means do the above nested lets
 (let* ((a 3) (b (+ a 1)))
   (+ a b))
