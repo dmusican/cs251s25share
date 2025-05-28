@@ -26,3 +26,11 @@
 (let ((add-one (lambda (x)
                  (+ x 1))))
   (add-one 5))
+
+;; Try the above with a recursive function
+(let ((fact (lambda (n)
+              (if (equal? n 1)
+                  1
+                  (* n (fact (- n 1)))))))
+
+  (fact 3))
