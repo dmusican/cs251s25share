@@ -5,4 +5,5 @@ def doit():
     x = 5
     global x
 
+print("heyyyy")
 doit()
