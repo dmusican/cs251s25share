@@ -12,5 +12,5 @@ int main() {
    int *z;
    z = &a;
    foo(z);
-   printf("%i\n",a);
+   printf("%i\n", *z);
 }
