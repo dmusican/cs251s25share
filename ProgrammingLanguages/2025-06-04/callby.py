@@ -6,4 +6,4 @@ def main():
    foo(a)
    print(a)
 
-   main()
+main()
