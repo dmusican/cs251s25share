@@ -8,6 +8,9 @@ void foo(int *x) {
 int main() {
    int a = 5;
    printf("%i\n",a);
-   foo(&a);
+
+   int *z;
+   z = &a;
+   foo(z);
    printf("%i\n",a);
 }
